@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+html {
+  font-size: 62.5%;
+}
+.content {
+  margin: auto;
+}
+.loading {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.object {
+  background-color: #009FF1;
+  width: 47px;
+  height: 47px;
+  animation:obj 1s linear alternate infinite ;
+}
+.object:nth-child(even){
+  animation-delay: 1s;
+}
+@keyframes obj {
+  100%{
+    transform: scale(0);
+  }
+}
